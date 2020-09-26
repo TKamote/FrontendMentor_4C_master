@@ -1,6 +1,74 @@
 body {
-	margin: 20px;
+	margin: 70px 150px ;
 	padding: 0px;
-	font-family: 'Titillium Web', sans-serif;
-	background-color: #dddddd;
+	font-family: 'Poppins', sans-serif;
+	background-color: hsl(0, 0%, 98%);
+}
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	margin: 10px;
+	border: solid 1px black;
+	width: 100%;
+	height: auto;
+}
+.container div {
+	margin: 10px;
+	border: solid 1px black;
+}
+.header {
+	grid-row: 1 / 3;
+	grid-column: 1 / 4;
+	max-width: 1440px;
+	min-width: max;
+	height: 250px;
+	text-align: center;
+}
+.Team-Builder {	
+	grid-row: 3 / 5;
+	grid-column: 2 / 3;
+	width: 300px;
+	height: 250px;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 10px 15px;
+	box-shadow: 10px 10px 5px hsl(0, 7%, 24%);
+
+}
+.Supervisor {	
+	grid-row: 4 / 6;
+	grid-column: 1 / 2;
+	width: 300px;
+	height: 250px;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 10px 15px;
+	box-shadow: 0px 0px 0px 2px rgb(209, 28, 28);
+}
+.Karma {	
+	grid-row: 5 / 7;
+	grid-column: 2 / 3;
+	width: 300px;
+	height: 250px;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 10px 15px;
+}
+.Calculator {
+	grid-row: 4 / 6;
+	grid-column: 3 / 4;
+	width: 300px;
+	height: 250px;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 10px 15px;
+	
+}
+p {
+	font-size: 15px;
+}
+img {
+	justify-content: end;
+	align-content: ;
 }
