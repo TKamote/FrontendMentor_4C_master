@@ -107,7 +107,14 @@ img {
 	width: 50px;
 	height: auto;
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1110px) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr;
+		position: relative;
+		margin-left: 50%;
+		margin-right: 50%;
+	}
 	.header {
 		grid-row: 1 / 2;
 		grid-column: 1 / 2;
@@ -127,5 +134,42 @@ img {
 	.Calculator {
 		grid-row: 5 / 6;
 		grid-column: 1 / 2;	
+	}
+}
+
+
+@media only screen and (max-width: 640px) {
+	body {
+		margin: 70px 0px ;
+		padding: 0px;
+		background-color: transparent;
+	}
+	.header {
+		grid-row: 1 / 2;
+		grid-column: 1 / 2;
+	}
+	.Team-Builder {	
+		grid-row: 2 / 3;
+		grid-column: 1 / 2;
+		margin: 10px;
+		padding: 10px;
+	}
+	.Supervisor {	
+		grid-row: 3 / 4;
+		grid-column: 1 / 2;	
+		margin: 10px;
+		padding: 10px;
+	}
+	.Karma {	
+		grid-row: 4 / 5;
+		grid-column: 1 / 2;	
+		margin: 10px;
+		padding: 10px;
+	}
+	.Calculator {
+		grid-row: 5 / 6;
+		grid-column: 1 / 2;	
+		margin: 10px;
+		padding: 10px;
 	}
 }
