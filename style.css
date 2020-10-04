@@ -67,11 +67,10 @@ body {
 	border-radius: 5px;
 	margin: 10px 10px 10px 20px;
 }
-.image {
-	position: relative;
-	/*left: 200px;*/
-	top: 90px;
-	right: -200px;
+img {
+	width: 50px;
+	height: auto;
+	float: right;
 }
 .Karma {	
 	grid-row: 5 / 7;
@@ -107,6 +106,7 @@ p {
 img {
 	width: 50px;
 	height: auto;
+	float: right;
 }
 @media only screen and (max-width: 1110px) {
 	body {
@@ -174,5 +174,10 @@ img {
 		grid-row: 5 / 6;
 		grid-column: 1 / 2;	
 		
+	}
+	img {
+		width: 50px;
+		height: auto;
+		float: right;
 	}
 }
