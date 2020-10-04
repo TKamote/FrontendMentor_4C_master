@@ -1,7 +1,14 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
 body {
+	max-width: 1440px;
 	margin: 70px 150px ;
 	padding: 0px;
-	font-family: 'Poppins', sans-serif;
 	background-color: #f7ecec;
 }
 .container {
@@ -60,6 +67,11 @@ body {
 	border-radius: 5px;
 	margin: 10px 10px 10px 20px;
 }
+.image {
+	position: relative;
+	left: 200px;
+	top: 90px;
+}
 .Karma {	
 	grid-row: 5 / 7;
 	grid-column: 2 / 3;
@@ -90,14 +102,12 @@ p {
 	font-size: 15px;
 	color: rgb(68, 62, 62) ;
 }
-div img {
-	padding-left: 190px;
-}
+
 img {
 	width: 50px;
 	height: auto;
 }
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 640px) {
 	.header {
 		grid-row: 1 / 2;
 		grid-column: 1 / 2;
@@ -105,21 +115,17 @@ img {
 	.Team-Builder {	
 		grid-row: 2 / 3;
 		grid-column: 1 / 2;
-
 	}
 	.Supervisor {	
 		grid-row: 3 / 4;
-		grid-column: 1 / 2;
-		
+		grid-column: 1 / 2;	
 	}
 	.Karma {	
 		grid-row: 4 / 5;
-		grid-column: 1 / 2;
-		
+		grid-column: 1 / 2;	
 	}
 	.Calculator {
 		grid-row: 5 / 6;
-		grid-column: 1 / 2;
-		
+		grid-column: 1 / 2;	
 	}
 }
